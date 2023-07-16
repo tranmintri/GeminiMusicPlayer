@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_BottomDialog_AddPlaylist"
+    android:padding="10dp"
+
+    android:background="@drawable/background_gradient">
+    <TextView
+        android:id="@+id/tv_close_create_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_close_24"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:gravity="center"
+        android:layout_below="@+id/tv_close_create_pl"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đặt tên cho danh sách phát của bạn"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+           />
+
+        <EditText
+            android:id="@+id/edtPlayListName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#B3ADAD"
+            android:gravity="center"
+            android:text="Danh sách phát"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_createPlaylist"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_signin"
+            android:text="Tạo"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

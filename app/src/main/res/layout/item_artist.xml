@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:background="@color/black"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        >
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_gravity="center"
+            android:id="@+id/img_artist"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/amee"
+            android:scaleType="centerCrop">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <CheckBox
+            android:id="@+id/checkbox_artist"
+            android:button="@drawable/custom_checkbox"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

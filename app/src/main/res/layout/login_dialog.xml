@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#555454">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EAE5E5"
+        android:layout_marginTop="20dp"
+        android:text="Tên đăng nhập"
+        android:textSize="13dp"
+        android:textStyle="bold"></TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userSignUpContainerDialog"
+        style="@style/MyTextInputLayout"
+        android:textColorHint="#fff"
+        app:boxStrokeColor="@color/text_input_box_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:hintTextColor="@color/white"
+        android:background="#555454"
+        app:helperText="Bắt buộc"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#D30617">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_usernameDialog"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:lines="1"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#EAE5E5"
+        android:layout_marginTop="20dp"
+        android:text="Mật khẩu"
+        android:textSize="13dp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordSignUpContainerDialog"
+        style="@style/MyTextInputLayout"
+        android:textColorHint="#fff"
+        app:boxStrokeColor="@color/text_input_box_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:helperText="Bắt buộc"
+        app:helperTextTextColor="#D30617"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:counterEnabled="true"
+        app:hintTextColor="@color/white"
+        app:counterMaxLength="16"
+        android:background="#555454"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        app:counterTextColor="@color/white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_passDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            android:lines="1"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChangPassDialog"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/button_signin"
+            android:minHeight="35dp"
+            android:text="Đổi mật khẩu"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancleDialog"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_white"
+            android:minHeight="35dp"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+
+</LinearLayout>

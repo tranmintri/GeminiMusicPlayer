@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Activity_Home"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/currentStatus"
+        />
+
+    <LinearLayout
+        android:id="@+id/currentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav"
+        android:background="#423F3F"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_marginVertical="10dp"
+            android:id="@+id/iv_ImageArtist"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/amee"
+            android:layout_marginEnd="8dp"
+            ></ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+           >
+            <TextView
+                android:id="@+id/tv_MusicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bước qua nhau"
+                android:textSize="15sp"
+                android:textColor="@color/white">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_ArtistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dế choắt"
+                android:textSize="16sp"
+                android:textColor="#B3ADAD"
+                android:layout_below="@id/tv_MusicName">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_pause_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_play_arrow_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"></TextView>
+            <SeekBar
+                android:id="@+id/seekbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="17dp"
+                android:layout_below="@id/tv_ArtistName"
+                android:progressTint="@color/white"></SeekBar>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        app:itemBackground="@color/black"
+        app:itemIconTint="@color/custom_color_bottom_nav"
+        app:itemTextColor="@color/custom_color_bottom_nav"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</RelativeLayout>
